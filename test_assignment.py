@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 
 def test_if_data_exists():
     print(os.path.isdir('data'))
@@ -8,5 +9,9 @@ def test_if_model_exists():
     print(os.path.isfile('model.h5'))
     assert os.path.isfile('model.h5') != True  
     
+def test_accuracy_score():
+    df = pd.read_csv('metrics.csv')
+    print((df['accuracy']>0.70))
+    assert (df['accuracy']>0.70).unique() == True
     
     
