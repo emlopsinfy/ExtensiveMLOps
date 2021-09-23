@@ -34,5 +34,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Display metrics
       run: |
         python py_api.py               
