@@ -34,7 +34,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Display metrics
+    - name: cml_run
       run: |
         python py_api.py
         echo "MODEL METRICS" > report.md
