@@ -33,11 +33,11 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest -vv test.py
     - name: Display metrics
-      run: |
-        python py_api.py
-        echo "MODEL METRICS" > report.md
-        cat metrics.csv >> report.md
-        
-        cml-publish metrics.csv --md >> report.md
+#      run: |
+#        python py_api.py
+#        echo "MODEL METRICS" > report.md
+#        cat metrics.csv >> report.md
+#        
+#        cml-publish metrics.csv --md >> report.md
