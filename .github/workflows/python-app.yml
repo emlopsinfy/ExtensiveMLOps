@@ -37,5 +37,7 @@ jobs:
     - name: Display metrics
       run: |
         python py_api.py
-        echo "MODEL METRICS"
-        cat metrics.csv
+        echo "MODEL METRICS" > report.md
+        cat metrics.csv >> report.md
+        
+        cml-send-comment report.md
