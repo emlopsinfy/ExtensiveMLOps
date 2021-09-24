@@ -40,4 +40,4 @@ jobs:
         echo "MODEL METRICS" > report.md
         cat metrics.csv >> report.md
         
-        cml-send-comment report.md
+        cml-publish metrics.csv --md >> report.md
