@@ -36,4 +36,6 @@ jobs:
         pytest
     - name: Display metrics
       run: |
-        python py_api.py               
+        python py_api.py
+        echo "MODEL METRICS" > report.md
+        cat metrics.csv >> report.md
