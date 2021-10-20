@@ -6,6 +6,8 @@ It creates folder .github/workflows/python-app.yml
 
 We mentioned to run pipelines on python-app.yml whenever there is a push on any branch.
 
+Used python library pytest to run test-cases in the pipeline.
+
 DVC
 
 We also used DVC for basic ML version control. 
